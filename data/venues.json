@@ -1,0 +1,26 @@
+{
+    "raduga": {
+      "name": "Радуга",
+      "address": "ул. Елены Стасовой, 69л",
+      "working_hours": "ежедневно с 8:00 до 22:00",
+      "sports": [
+        "swimming",
+        "basketball",
+        "volleyball",
+        "gym",
+        "skiing",
+        "squash"
+      ]
+    },
+    "sopka": {
+      "name": "Сопка",
+      "address": "ул. Снежная, 1",
+      "working_hours": "ежедневно с 8:00 до 22:00",
+      "sports": [
+        "skiing_sopka",
+        "gym_sopka",
+        "table_tennis"
+      ]
+    }
+  }
+  

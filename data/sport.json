@@ -1,0 +1,82 @@
+{
+    "swimming": {
+      "name": "Плавание",
+      "description": "Размер бассейна – 50x25 м, Глубина бассейна – от 2,2 до 3 м, Количество дорожек – 10 шт, Температура воды – 27-28°C.",
+      "additional": "В бассейне бесплатная сауна.",
+      "url": "https://usports.online/sports/swimming",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoSwimm.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "basketball": {
+      "name": "Баскетбол",
+      "description": "Размеры игрового поля – 18x9 м (162 м²).",
+      "additional": "На площадке временно отсутствуют мячи, для игры необходимо принести свой мяч.",
+      "url": "https://usports.online/sports/basketball",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoBask.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "volleyball": {
+      "name": "Волейбол",
+      "description": "Размеры игрового поля – 18x9 м (162 м²), Высота сетки – 2,43 м.",
+      "additional": "На площадке временно отсутствуют мячи, для игры необходимо принести свой мяч.",
+      "url": "https://usports.online/sports/volleyball",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoVoll.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "gym": {
+      "name": "Тренажерный зал (Радуга)",
+      "description": "Размер зала – 193 м², 6 видов тренажеров.",
+      "url": "https://usports.online/sports/gym",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoGym.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "skiing": {
+      "name": "Беговые лыжи",
+      "description": "Длина трасс – более 10 км, Ширина трасс – от 7,5 до 12 м, Лыжероллерные трассы – до 5 км.",
+      "additional": "На площадку нужно приходить со своим инвентарем.",
+      "url": "https://usports.online/sports/skiing",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoSki.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "squash": {
+      "name": "Сквош",
+      "description": "Кабина для игры – 13x12 м (170 м²).",
+      "additional": "Есть аренда ракеток и мяча.",
+      "url": "https://usports.online/sports/squash",
+      "address": "ул. Елены Стасовой, 69л",
+      "photo": "./images/logoSqosh.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "table_tennis": {
+      "name": "Настольный теннис",
+      "description": "Покрытие – кафельное и резиновое. Количество столов – 7 шт.",
+      "additional": "В МФК 'Сопка' два зала для игры в настольный теннис.",
+      "url": "https://usports.online/sports/table_tennis",
+      "address": "ул. Биатлонная, 25Б",
+      "photo": "./images/logoTT.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "gym_sopka": {
+      "name": "Тренажерный зал (Сопка)",
+      "description": "Размер зала – 336 м², Количество тренажеров – 34.",
+      "url": "https://usports.online/sports/gym",
+      "address": "ул. Биатлонная, 25Б",
+      "photo": "./images/logoGymS.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    },
+    "skiing_sopka": {
+      "name": "Горные лыжи",
+      "description": "Длина трассы – 423 м.",
+      "additional": "На площадку нужно приходить со своим инвентарем.",
+      "url": "https://usports.online/sports/skiing",
+      "address": "ул. Биатлонная, 25Б",
+      "photo": "./images/logoSkiS.png",
+      "schedule": "Ежедневно с 8:00 до 22:00"
+    }
+  }
+  
