@@ -1,0 +1,15 @@
+{
+  "name": "botzaryad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js" 
+  },
+  "author": "Nikita Chekhun",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
