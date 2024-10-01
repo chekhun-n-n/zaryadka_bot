@@ -10,7 +10,8 @@
         "gym",
         "skiing",
         "squash"
-      ]
+      ],
+      "photoPath": "./images/raduga.png"
     },
     "sopka": {
       "name": "Сопка",
@@ -20,7 +21,8 @@
         "skiing_sopka",
         "gym_sopka",
         "table_tennis"
-      ]
+      ],
+      "photoPath": "./images/sopka.png"
     }
   }
   
