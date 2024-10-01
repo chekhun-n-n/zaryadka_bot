@@ -1,0 +1,13 @@
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: 18
+build:
+  skip: false
+  artifacts:
+    "*": /
+run:
+  scriptName: main.js
+  command: npm run start
+  persistenceMount: /data
