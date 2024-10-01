@@ -2,18 +2,28 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 
-const token = process.env.BOT_TOKEN; // Токен будет браться из переменной окружения
+const token = '7955675496:AAHKOenxXFpv1fBLw2Ax2V3uMCivmQN13qE';
+
 const bot = new TelegramBot(token, { polling: true });
 
 // Загружаем данные из файлов JSON
 const sportsData = JSON.parse(fs.readFileSync('./data/sport.json', 'utf8'));
 const venuesData = JSON.parse(fs.readFileSync('./data/venues.json', 'utf8'));
 
+bot.setMyCommands([
+    { command: '/start', description: 'Перезапустить бота' },
+    { command: '/info', description: 'О нас' },
+    { command: '/menu', description: 'Главное меню' }
+  ]);
+
 // Обработчик команды /start
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
 
-    const welcomeMessage = `Привет ${msg.from.first_name} ${msg.from.last_name}! Добро пожаловать в бота U-sport, у нас ты можешь оставить обратную связь, получить ответы на вопросы и быть в курсе всех новостей`;
+    const welcomeMessage = `Привет ${msg.from.first_name} ${msg.from.last_name}! Добро пожаловать в бота U-sport, у нас ты можешь оставить обратную связь, получить ответы на вопросы и быть в курсе всех новостей\n\nНаш сайт для бронирования: https://usports.online/\n
+Социальные сети:
+VK: https://vk.com/usports.online
+Telegram: https://t.me/Zaaryadkaa`;
 
     const options = {
         reply_markup: JSON.stringify({
@@ -29,6 +39,28 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(chatId, welcomeMessage, options);
 });
 
+bot.onText(/\/menu/, (msg) => {
+    const chatId = msg.chat.id;
+
+    const options = {
+        reply_markup: JSON.stringify({
+            keyboard: [
+                ['Забронировать на сайте'],
+                ['Спорткомплексы', 'Виды спорта'],
+                ['Оставить отзыв']
+            ],
+            resize_keyboard: true
+        })
+    };
+
+    bot.sendMessage(chatId, 'Вернули кнопки меню:', options);
+});
+
+bot.onText(/\/info/, (msg) => {
+    const chatId = msg.chat.id;
+    bot.sendMessage(chatId, welcomeMessage);
+});
+
 // Обработчик для кнопки "Забронировать на сайте"
 bot.onText(/Забронировать на сайте/, (msg) => {
     const chatId = msg.chat.id;
@@ -42,7 +74,7 @@ bot.onText(/Забронировать на сайте/, (msg) => {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Перейти на сайт', url: 'https://usports.online/' }]
+                    [{ text: 'Перейти на сайт', url: 'https://usports.fun/raduga/' }]
                 ]
             }
         });
@@ -51,7 +83,7 @@ bot.onText(/Забронировать на сайте/, (msg) => {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Перейти на сайт', url: 'https://usports.online/' }]
+                    [{ text: 'Перейти на сайт', url: 'https://usports.fun/raduga/' }]
                 ]
             }
         });
