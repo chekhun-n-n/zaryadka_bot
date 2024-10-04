@@ -2,7 +2,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 
-const token = '7955675496:AAHKOenxXFpv1fBLw2Ax2V3uMCivmQN13qE';
+const token = '7650170263:AAEuKx76feJCyLpErximayw66cE1aRiZ7Ak';
 
 const bot = new TelegramBot(token, { polling: true });
 
@@ -23,7 +23,7 @@ bot.onText(/\/start/, (msg) => {
     const welcomeMessage = `Привет ${msg.from.first_name} ${msg.from.last_name}! Добро пожаловать в бота U-sport, у нас ты можешь оставить обратную связь, получить ответы на вопросы и быть в курсе всех новостей\n\nНаш сайт для бронирования: https://usports.online/\n
 Социальные сети:
 VK: https://vk.com/usports.online
-Telegram: https://t.me/Zaaryadkaa`;
+Telegram: https://t.me/UsportsOnline`;
 
     const options = {
         reply_markup: JSON.stringify({
